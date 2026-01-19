@@ -1,0 +1,9 @@
+.myParagraph {
+    color: black;             /* Text color */
+    background-color: yellow;   /* Background color */
+    font-size: 20px;          /* Font size */
+    text-align: center;       /* Text alignment */
+	
+	/* Add text shadow */
+    text-shadow: 2px 2px 4px black; /* x-offset, y-offset, blur-radius, color */
+}
