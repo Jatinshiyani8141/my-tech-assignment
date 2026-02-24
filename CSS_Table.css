@@ -1,0 +1,28 @@
+/* Style the table */
+table {
+    width: 60%;
+    border-collapse: collapse;
+    background-color: #f2f2f2; /* Table background color */
+    color: #333;                /* Font color */
+    margin: 20px auto;          /* Center the table */
+    border: 2px solid #000;     /* Table border */
+    text-align: center;
+}
+
+/* Style the table headers */
+th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+}
+
+/* Style the table cells */
+td {
+    padding: 8px;
+    border: 1px solid #999;
+}
+
+/* Hover effect for table rows */
+tr:hover {
+    background-color: #ddd;
+}

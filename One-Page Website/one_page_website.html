@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>City Zoo</title>
+    <link rel="stylesheet" href="./CSS/one_page_website.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+    <a href="#home" class="active">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#video">Video</a>
+    <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div>
+            <h1>Welcome to the City Zoo</h1>
+            <p>
+                The City Zoo is a family-friendly destination where visitors can explore
+                animals from around the world. Our mission is to promote wildlife
+                conservation, education, and fun for all ages.
+            </p>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Zoo Gallery</h2>
+
+        <div class="row">
+            <div class="column">
+                <img src="./images/img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="./images/img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="./images/img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+           
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="./images/img1_large.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="./images/img2_large.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="./images/img3_large.jpg" style="width:100%">
+                </div>
+
+              
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail controls -->
+                <div class="column">
+                    <img class="demo" src="./images/img1.jpg" onclick="currentSlide(1)" alt="Lion">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="./images/img2.jpg" onclick="currentSlide(2)" alt="Giraffe">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="./images/img3.jpg" onclick="currentSlide(3)" alt="Elephant">
+                </div>
+               
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+        <h2>Zoo Tour Video</h2>
+        <div>
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/aqJIAxOinMo"
+                title="Zoo Tour Video"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div>
+            <h2>Contact Us</h2>
+            <p>Please provide us with your basic contact details</p>
+
+            <form action="" method="post">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Phone Number">
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 City Zoo. All rights reserved.</p>
+    </footer>
+
+    <!-- Link JavaScript -->
+    <script src="./JS/one_page_website.js"></script>
+
+</body>
+</html>
